@@ -10,5 +10,5 @@ This is my code for the CS50 simple hompage using HTML, CSS, JavaScript for Harv
 2. Use at least ten distinct HTML tags besides `<html>`, `<head>`, `<body>`, and `<title>`.
 3. Integrate one or more features from Bootstrap into your site.
 
-For more detailed specifications and for the distribution code, see: 
+For more detailed specifications, see: 
 https://cs50.harvard.edu/x/2020/tracks/web/homepage/
