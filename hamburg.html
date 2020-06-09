@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My favourite cities</title>
+        <!-- JS function for dropdown menu -->
+        <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+
+                }
+
+            }
+        }
+        </script>
+    </head>
+
+    <body>
+        <!-- Dropdown menu and intro -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Navigation</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Istanbul</a>
+                <a href="zurich.html">Zurich</a>
+                <a href="tbilisi.html">Tbilisi</a>
+                <a href="hamburg.html">Hamburg</a>
+            </div>
+        </div>
+        <!-- Hamburg info -->
+        <h2>Hamburg</h2>
+            <p>Since the days of the medieval Hanseatic League Hamburg has been a Free City and port of international status. Hamburg still has the second busiest harbour in Europe, and stands as a City-State in Germany’s Federal Republic. A constant ebb and flow of seafarers has given Hamburg a rakish reputation, which is half the fun of St Pauli and the infamous Reeperbahn. There are many other sides to the city, whether it’s the peace of its canals and the Alster lake in summer, or the many first-class visitor attractions. If you haven’t been to Hamburg for a few years, now is time to come again. The city is changing as we speak, as the new HafenCity revitalises the waterfront and adds new, ultra-modern reference points like the mesmerising Elbphilharmonie concert hall. Let’s explore the best things to do in Hamburg:</p>
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img class="mr-3" src="images/hamburg_speicherstadt.jpg" alt="Image of speicherstadt" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Speicherstadt</h5>
+                            <p>When Hamburg finally joined the German customs zone in 1888, work began on a new warehouse district for its free port. Residential quarters on the Zollkanal were removed and storage facilities were constructed on oak piles and with Gothic Revival architecture. Now protected as a World Heritage Site, the Speicherstadt or City of Warehouses has an atmosphere all its own, and it’s enough just to walk through these red-brick canyons, crossing the canals and admiring the glazed decoration on the gabled facades. Some of the warehouses have recently been turned into apartments, others are visitor attractions, while a few still fill their original purpose, storing spices, tea, coffee and electronics.</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3" src="images/hamburg_hafen.jpg" alt="Image of Harbour Boat" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Harbour Boat Tour</h5>
+                            <p>Boat trips aren’t just another thing to do in Hamburg; They’re the best way to see the harbour and waterside districts. These trips can also be done on the cheap (or free on your Hamburg CARD), as a line-up of public HADAG ferries depart the floating jetties at Landungsbrücken and make round trips. So say you want a whirlwind trip past the hulking cranes of Europe’s second-busiest container port, you can catch the 61 boat, which sails to Neuhof and back. Or if you’d like to marvel at the HafenCity and the Elbphilharmonie from the water step aboard number 72.</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3" src="images/hamburg_rathaus.jpg" alt="Image of Rathaus" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Hamburg Rathaus</h5>
+                            <p>Hamburg’s city hall is as stirring as they come, and reflects the prosperity and optimism of a newly united Germany at the end of the 19th century. The architecture on the 133-metre-wide facade is Neo-Renaissance, and the tower in the centre soars to 112 metres. There are short-term exhibitions inside, which are free to view and you can go through to the courtyard, which has a fountain crowned with a statue of the goddess Hygieia. Or you can pay a small fee and take an hour-long tour. The interior has more of a Historicist design and one of its talking points is the amazing number of rooms inside: 647 at the last count, because oddly enough a whole new room was discovered in the tower in 1971.</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3" src="images/hamburg_Planten.jpeg" alt="Image of Planten un Blomen" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Planten un Blomen</h5>
+                            <p>Planten un Blomen, which translates as the very imaginative Plants and Flowers, spans over 100 acres and is a favorite among locals and travelers. Referred to as "Hamburg's green lung," it is home to various themed gardens, including a rose garden, Mediterranean terraces and one of the largest Japanese landscaped gardens in Europe. Planten un Blomen offers much more than the eponymous "plants and flowers." There are playgrounds, mini-golf, an ice rink in winter and a roller rink in summer, and even life-size chess games. There are also several cafes and food kiosks. Many past visitors said the park is a relaxing place to unwind and highly recommend touring the Japanese garden. Others said the park is well-maintained and a worthy stop even in the offseason.</p>
+                        </div>
+                    </li>
+                </ul>
+    </body>
+</html>

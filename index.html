@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My favourite cities</title>
+        <!-- JS function for dropdown menu -->
+        <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+
+                }
+
+            }
+        }
+        </script>
+    </head>
+
+    <body>
+        <!-- Dropdown menu and intro -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Navigation</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Istanbul</a>
+                <a href="zurich.html">Zurich</a>
+                <a href="tbilisi.html">Tbilisi</a>
+                <a href="hamburg.html">Hamburg</a>
+            </div>
+        </div>
+        <h1>My favourite cities</h1>
+            <p>There are a lot of nice places on the Earth. I believe every person has his own favourite cities. So, here I'd like to tell about mine.</p>
+        <!-- Istanbul info -->
+        <h2>Istanbul</h2>
+            <p>Istanbul is the first muslim city I've visited so far. Frankly speaking, I was a little scary at first of culture gap that I might not understand. In fact, this city just opened my heart to its culture and peole. I'll mention only few things that I really enjoyed:</p>
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img class="mr-3" src="images/Istanbul_Bosphorus.jpg" alt="Image of Bosphorus" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Bosphorus</h5>
+                            <p>Every visitor to Istanbul wants to—and should!—take a Bosphorus cruise on the 32 km (20-mile)-long strait which joins the Sea of Marmara to the south with the Black Sea to the north of Istanbul. There are many varieties of Bosphorus cruises.
+                            If possible I recommend avoiding the typical overly crowded tourist boats and enjoy the enchantment of Istanbul along the beautiful Bosphorus with a smaller group on a luxury yacht at sunset!  History Travel's Sunset Tour has focused on one thing for 15 years and that is to help visitors to Istanbul have the very best experience on a Bosphorus  cruise at an affordable price.</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3" src="images/Istanbul_mosques_1.jpg" alt="Image of mosque" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Mosques</h5>
+                            <p>Probably Istanbul’s most famous mosque, the Blue Mosque is a hugely popular tourist attraction due to its striking bright-blue tile work. The last great mosque of the Ottoman classical period, this imposing 17th-century building is best seen from Sultanahmet Park, where the mosque’s six distinctive minarets mark its presence above the treetops. The mosque also faces Hagia Sophia – an engineering marvel considered to be the epitome of Byzantine architecture.</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3" src="images/Istanbul_food.gif" alt="Image of Turkish cuisine" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Food</h5>
+                            <p>There is so much more to Turkish cuisine then kebabs. I learned that traditional Turkish food isn’t all about meat and while meat does play a huge role in Turkish cuisine,  there are heaps of vegetarian and vegan options. All it takes is a bit of asking and looking around to find out what’s available. Served in a slim-waisted and curved glass, Turkish tea is usually being served after a meal and is amber-colored and bitter. Turkish tea can be found at literally any place and I highly recommend trying it while in Turkey. I enjoyed mine at Cafe Zoo at Caferağa Mahallesi, Sarraf Ali Sk. No:3, a cafe I highly recommend checking out!</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3" src="images/Istanbul_cats.jpeg" alt="Image of two cats" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Cats</h5>
+                            <p>Everywhere I walked, there were cats. After weeks in the city I wanted to know: why are there so many cats in Istanbul? I should note that I’m a cat person. Am I cat-whisperer? Maybe not insofar as career choices go, but I do seem to be perpetually followed by cats. In Muang Ngoi, Laos, I would sit down to read on my bungalow’s porch and within minutes, a cat would deftly squeeze between book and knees. Daily, I’d wander to town for dinner and sit on a mat for some food. Seconds later, a feline (sometimes two) would push their way onto my lap, purring furiously. Wandering through Amman, I found myself stooping down to pet scraggly-looking cats, each materializing when I would stop to gather my bearings.</p>
+                        </div>
+                    </li>
+                </ul>
+    </body>
+</html>

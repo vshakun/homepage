@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My favourite cities</title>
+        <!-- JS function for dropdown menu -->
+        <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+
+                }
+
+            }
+        }
+        </script>
+    </head>
+
+    <body>
+        <!-- Dropdown menu and intro -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Navigation</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Istanbul</a>
+                <a href="zurich.html">Zurich</a>
+                <a href="tbilisi.html">Tbilisi</a>
+                <a href="hamburg.html">Hamburg</a>
+            </div>
+        </div>
+        <!-- Zurich info -->
+        <h2>Zurich</h2>
+            <p>Not only is Zurich isn't known for it's special must see attractions, it’s consistently ranked in the first places in the list of the most expensive cities in the world – and this, is one of the things that could totally ruin my vacation.</p>
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img class="mr-3" src="images/Zurich_old_town.jpg" alt="Image of the old town" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">The Old Town</h5>
+                            <p>The Altstadt district is arguably the most beautiful area in Zurich. Divided into two parts across the river, the winding streets are lined with houses from medieval times. Some great cafés, restaurants and shops are found here and also Switzerland’s highest concentration of clubs. On a tour of the Old Town it’s impossible to miss landmarks including the towering trio of churches, Fraumünster’s curiously green steeple and the St. Peter church that has the largest clock face in Europe. In short, you’ll want to visit, if only to spend your time in the Old Town.</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3" src="images/zurich_1.jpg" alt="Image of lake" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Lake Zurich</h5>
+                            <p>Sure, it’s not the Mediterranean, but at Lake Zurich it’s possible to go for a dip (although not recommended in winter), hire a pedal boat or just lounge by the shore at one of the many parks that surround it. Cafés, bars and restaurants are dotted around the lake as well, providing a drink with a view.</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3" src="images/Zurich_food.jpg" alt="Image of vegetarian dish" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Food</h5>
+                            <p>Zurich has got some fantastic restaurants where it’s possible to try out traditional Swiss dishes. Aside from that it’s also got a great selection of international restaurants to cater to its diverse populations. Tantalise your tastebuds and take a look at some of the top foods you simply have to try before you pack your bags.</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img class="mr-3" src="images/Zurich_nature.jpg" alt="Image of nature" style="width:320px;height:250px;">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Nature</h5>
+                            <p>Zurich is a gateway to explore central Switzerland. There are so many great day-trips to take from Zurich that you’ll want to put aside some of your time to get out of the city and explore. The Rhine Falls (Europe’s largest waterfall), the beautiful and historic city of Lucerne, and towering Mount Titlis are all within a day’s trip of Zurich.</p>
+                        </div>
+                    </li>
+                </ul>
+    </body>
+</html>
